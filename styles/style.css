@@ -1,6 +1,5 @@
-
-body{
-    background-color: aliceblue;
+*{
+    font-family: Barlow,sans-serif;
 }
 .header{
   padding-bottom: 200px;
@@ -10,11 +9,8 @@ body{
     grid-template-columns: auto 1fr auto auto auto;
     gap: 20px;
     position: relative;
-    padding: 30px 50px;
-    background-color: #f4f4f4e6;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
+    padding: 10px 30px;
+    background-color: #f4f4f480;
 }
 .header-box{
     position: absolute;
@@ -22,7 +18,8 @@ body{
     left: 0;
     right: 0;
     width: 100%;
-    max-height: 350px;
+    min-height: 100px;
+    height: 252px;
     object-fit: cover;
     object-position: top;
 }
@@ -32,77 +29,182 @@ body{
     left: 0;
     right: 0;
     width: 100%;
-    max-height: 350px;
+    min-height: 100px;
+    height: 250px;
     object-fit: cover;
     object-position: top;
     z-index: -1;
 }
-
-.header .logo {
+.logo {
     display: flex;
     align-items: center;
     gap: 15px;
-    
 }
 .logo-img img {
-    padding-top: 20px;
-    width: 120px;
-    height: 120px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
     border-radius: 55px;
     box-shadow: azure 0 0 10px;
+}
+.contact, .mail, #mail{
+    display: none;
 }
 .social{
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-right: 30px;
-    margin-bottom: 70px;
 }
-.mail img{
-    width: 30px;
-    height: 30px;
-}
-.mail{
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.name{
+    font-size: 1rem;
 }
 .wpp{
     font-weight: bold;
-    display: flex;
-    align-items: center;
     gap: 15px;
 }
 .wpp img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
+    display: flex;
+    margin-top: 100px;
+    margin-right: 20px;
 }
 
 .menu{
     background-color: aliceblue;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    column-gap: 25px;
+    padding: 10px 10px 0;
+    overflow-x: overlay;
     margin: 0 auto;
-    width: 80%;
-    border-radius: 25px;
+    width: 85%;
     box-shadow: inset 0 0 10px #000000;
-    padding: 10px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .products{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     margin-top: 10px;
 }
 .products p {
-    font-size: 1rem;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
 }
 .products img {
     box-shadow: inset 0 0 10px #000000;
     border-radius: 50px;
+    width: 70px;
+    height: 70px;
 }
+
+@media screen and (min-width: 1020px) {
+    
+.header{
+    padding-bottom: 250px;
+  }
+  .header-box{
+      display: grid;
+      grid-template-columns: auto 1fr auto auto auto;
+      gap: 20px;
+      position: relative;
+      padding: 30px 50px;
+      background-color: #f4f4f4e6;
+      height: 100px;
+     
+  }
+  .header-box{
+      position: absolute;
+      
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-height: 250px;
+      height: 150px;
+      object-fit: cover;
+      object-position: top;
+  }
+  .bg-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-height: 350px;
+      height: 350px;
+      object-fit: cover;
+      object-position: top;
+      z-index: -1;
+  }
+  
+  .logo {
+    margin-top: 45px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
+  .logo-img img {
+      width: 120px;
+      height: 120px;
+      border-radius: 55px;
+      box-shadow: azure 0 0 10px;
+  }
+  .social{
+    gap: 15px;
+    margin-right: 30px;
+  }
+  .contact, .mail, #mail{
+    display: flex;
+}
+  .mail img{
+      width: 30px;
+      height: 30px;
+  }
+  .mail{
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
+  .wpp{
+      font-weight: bold;
+      gap: 15px;
+  }
+  .wpp img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      margin-bottom: 100px;
+  }
+  
+  .menu{
+      background-color: aliceblue;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 80%;
+      border-radius: 25px;
+      box-shadow: inset 0 0 10px #000000;
+      padding: 10px;
+      margin-top: 40px;
+  }
+  .products{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 10px;
+  }
+  .products p {
+      font-size: 1rem;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .products img {
+      box-shadow: inset 0 0 10px #000000;
+      border-radius: 50px;
+  }
+}
+
