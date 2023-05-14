@@ -79,8 +79,8 @@
     margin-right: 20px;
 }
 
-.menu{
-    background-color: aliceblue;
+.menu-nav{
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -89,8 +89,10 @@
     overflow-x: overlay;
     margin: 0 auto;
     width: 85%;
-    box-shadow: inset 0 0 10px #000000;
     margin-top: 60px;
+}
+.menu-sect{
+    background-color: rgb(255, 255, 255);
 }
 .products{
     margin-top: 10px;
@@ -102,13 +104,51 @@
     text-align: center;
 }
 .products img {
-    box-shadow: inset 0 0 10px #000000;
     border-radius: 50px;
     width: 70px;
     height: 70px;
+    
+}
+.items-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    border: 2px solid #e75022;
+    padding: 10px;
+    margin-top: -15px;
+    border-radius: 10px;
+    width: 75px;
+    height: 10px;
+}
+.items-box{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    height: 70px;
+}
+.items-desc{
+    font-size: 15px;
+    color: rgb(104, 102, 102);
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+.items-box-Wdesc{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    height: 112px;
+}
+.items-price span{
+    color:  #e75022;;
+    font-weight: 700;
+    font-size: 15px;
+}
+.items-icon{
+    width: 20px;
+    height: 20px;
+  
 }
 @media screen and (min-width: 540px) and (max-width: 540px){
-    /* Styles for tablets */
+    /* Styles for Surface Duo */
     .header-box{
         padding: 30px 50px;
         background-color: #f4f4f4e6;
@@ -121,7 +161,7 @@
         position: fixed;
         min-width: 100%;
     }
-    .menu{
+    .menu-nav{
         display: flex;
         flex-direction: flex;
         align-items: center;
@@ -157,7 +197,7 @@
         width: 100%;
         position: fixed;
     }
-    .menu{
+    .menu-nav{
         display: flex;
         flex-direction: flex;
         align-items: center;
@@ -198,6 +238,18 @@
         margin-left: -10px;
       }
   }
+  .bg-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+}
 
 @media screen and (min-width: 1020px) {
     
@@ -288,14 +340,13 @@
       margin-bottom: 100px;
   }
   
-  .menu{
+  .menu-nav{
       background-color: aliceblue;
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
       width: 80%;
       border-radius: 25px;
-      box-shadow: inset 0 0 10px #000000;
       padding: 10px;
       margin-top: 40px;
   }
@@ -311,7 +362,6 @@
       margin-right: 10px;
   }
   .products img {
-      box-shadow: inset 0 0 10px #000000;
       border-radius: 50px;
   }
 }
