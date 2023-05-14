@@ -51,6 +51,9 @@
 .contact, .mail, #mail{
     display: none;
 }
+#mail wpp{
+    display: flex;
+}
 .social{
     display: flex;
     align-items: center;
@@ -61,6 +64,11 @@
 .wpp{
     font-weight: bold;
     gap: 15px;
+}
+.wpp-p{
+    font-weight: 700;
+    margin-top: 200px;
+    margin-left: -85px;
 }
 .wpp img{
     width: 40px;
@@ -120,6 +128,19 @@
         margin-left: 80px;
 
     }
+    .wpp img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        margin-top: 100px;
+        margin-right: 20px;
+    }
+    .wpp-p{
+        font-weight: 700;
+        margin-top: 115px;
+        margin-left: -10px;
+      }
 }
 @media screen and (max-width: 280px) {
     /* Styles for Galaxy Fold */
@@ -143,6 +164,19 @@
         margin-left: 50px;
 
     }
+    .wpp img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .wpp-p{
+        font-weight: 700;
+        margin-top: 140px;
+        margin-left: -100px;
+      }
 }
 
 @media screen and (min-width: 768px) {
@@ -158,6 +192,11 @@
         height: 350px;
         position: fixed;
     }
+    .wpp-p{
+        font-weight: 700;
+        margin-top: 120px;
+        margin-left: -10px;
+      }
   }
 
 @media screen and (min-width: 1020px) {
@@ -239,7 +278,8 @@
   }
   .wpp-p{
     font-weight: 700;
-    margin-top: 115px;
+    margin-top: 20px;
+    margin-left: -15px;
   }
   .wpp img{
       width: 50px;
