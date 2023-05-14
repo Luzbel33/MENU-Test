@@ -91,10 +91,18 @@
     width: 85%;
     margin-top: 60px;
 }
+.menu-nav a, #mail a{
+    text-decoration: none;
+    color: black;
+}
+
 .menu-sect{
     background-color: white;
 }
 .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
 }
 .products p {
