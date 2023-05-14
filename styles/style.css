@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 85%;
+    max-width: 85%;
     min-height: 100px;
     height: 252px;
     object-fit: cover;
@@ -99,6 +99,66 @@
     width: 70px;
     height: 70px;
 }
+@media screen and (min-width: 540px) and (max-width: 540px){
+    /* Styles for tablets */
+    .header-box{
+        padding: 30px 50px;
+        background-color: #f4f4f4e6;
+        height: 150px;
+        min-width: 100%;
+    }
+    .bg-img img {
+        max-height: 350px;
+        height: 350px;
+        position: fixed;
+        min-width: 100%;
+    }
+    .menu{
+        display: flex;
+        flex-direction: flex;
+        align-items: center;
+        margin-left: 80px;
+
+    }
+}
+@media screen and (max-width: 280px) {
+    /* Styles for Galaxy Fold */
+    .header-box{
+        padding: 20px 66px;
+        background-color: #f4f4f4e6;
+        height: 150px;
+        width: 100%;
+    }
+ 
+    .bg-img img {
+        max-height: 350px;
+        height: 350px;
+        width: 100%;
+        position: fixed;
+    }
+    .menu{
+        display: flex;
+        flex-direction: flex;
+        align-items: center;
+        margin-left: 50px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Styles for tablets */
+    .header-box{
+        padding: 30px 50px;
+        background-color: #f4f4f4e6;
+        height: 150px;
+        min-width: 90%;
+    }
+    .bg-img img {
+        max-height: 350px;
+        height: 350px;
+        position: fixed;
+    }
+  }
 
 @media screen and (min-width: 1020px) {
     
@@ -113,11 +173,10 @@
       padding: 30px 50px;
       background-color: #f4f4f4e6;
       height: 100px;
-     
   }
   .header-box{
       position: absolute;
-      
+      min-width: 100%;
       top: 0;
       left: 0;
       right: 0;
@@ -139,9 +198,11 @@
       object-position: top;
       z-index: -1;
   }
-  
+  .name{
+    margin-bottom: 50px;
+  }
   .logo {
-    margin-top: 45px;
+    margin-top: 60px;
       display: flex;
       align-items: center;
       gap: 15px;
@@ -156,6 +217,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-right: 150px;
   }
   .contact, .mail, #mail{
     display: flex;
@@ -173,6 +235,11 @@
   .wpp{
       font-weight: bold;
       gap: 15px;
+      margin-left: 20px;
+  }
+  .wpp-p{
+    font-weight: 700;
+    margin-top: 115px;
   }
   .wpp img{
       width: 50px;
