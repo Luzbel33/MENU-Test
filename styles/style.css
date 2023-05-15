@@ -95,7 +95,14 @@
     text-decoration: none;
     color: black;
 }
-
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    
+}
 .menu-sect{
     background-color: white;
 }
@@ -117,9 +124,10 @@
     height: 80px;
 }
 .items-title{
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .items-price{
     display: flex;
     align-items: center;
@@ -132,11 +140,7 @@
     width: 75px;
     height: 10px;
 }
-.items-box{
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin: 12px;
-    height: 70px;
-}
+
 .items-desc{
     font-size: 15px;
     color: rgb(104, 102, 102);
@@ -157,6 +161,39 @@
     width: 20px;
     height: 20px;
 }
+
+@media screen and (min-width:912px) and (max-width:1368px){
+    #title-bebidas, #title-sandwiches,
+#title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    .items-box-Wdesc{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        margin: 12px;
+        width: 600px;
+        height: 112px;
+    }
+    .items-title{
+     display: grid;
+    }
+    .items-desc{
+      margin-right: 50px;
+    }
+    .menu-sect{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        width: 90%;
+    }
+}
+
 @media screen and (min-width: 540px) and (max-width: 540px){
     /* Styles for Surface Duo */
     .header-box{
@@ -176,7 +213,9 @@
         flex-direction: flex;
         align-items: center;
         margin-left: 80px;
-
+    }
+    .menu-items{
+        margin-left: 80px;
     }
     .wpp img{
         width: 40px;
@@ -192,6 +231,7 @@
         margin-left: -10px;
       }
 }
+
 @media screen and (max-width: 280px) {
     /* Styles for Galaxy Fold */
     .header-box{
@@ -213,8 +253,13 @@
         display: flex;
         flex-direction: flex;
         align-items: center;
-        margin-left: 50px;
-
+        margin-left: 35px;
+    }
+    .items-box-Wdesc{
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        margin: 12px;
+        height: 130px;
+        width: 300px;
     }
     .wpp img{
         width: 40px;
@@ -232,6 +277,12 @@
 
 @media screen and (min-width: 768px) {
     /* Styles for tablets */
+    #title-bebidas, #title-sandwiches,
+#title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
     .header-box{
         padding: 30px 50px;
         background-color: #f4f4f4e6;
@@ -248,7 +299,31 @@
         margin-top: 120px;
         margin-left: 15px;
       }
-  }
+    .items-box-Wdesc{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        margin: 12px;
+        width: 600px;
+        height: 112px;
+    }
+    .items-title{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .items-desc{
+      margin-right: 50px;
+    }
+    .menu-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        width: 90%;
+    }
+    }
   .bg-img img {
     position: absolute;
     top: 0;
@@ -261,6 +336,8 @@
     object-position: top;
     z-index: -1;
 }
+
+
 
 @media screen and (min-width: 1020px) {
     
@@ -302,7 +379,7 @@
     margin-bottom: 50px;
   }
   .logo {
-    margin-top: 60px;
+    margin-top:45px;
       display: flex;
       align-items: center;
       gap: 15px;
@@ -386,6 +463,7 @@
 #title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .items-box{
     margin-top: -15px;
