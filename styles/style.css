@@ -17,7 +17,6 @@
     top: 0;
     left: 0;
     right: 0;
-    max-width: 85%;
     min-height: 100px;
     height: 252px;
     object-fit: cover;
@@ -149,8 +148,9 @@
 }
 .items-box-Wdesc{
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin: 12px;
+    margin: 0 0 auto 10px;
     height: 112px;
+    width: 330px;
 }
 .items-price span{
     color:  #e75022;;
@@ -201,6 +201,7 @@
         background-color: #f4f4f4e6;
         height: 150px;
         min-width: 100%;
+        width: 100%;
     }
     .bg-img img {
         max-height: 350px;
@@ -208,15 +209,14 @@
         position: fixed;
         min-width: 100%;
     }
+    
     .menu-nav{
         display: flex;
         flex-direction: flex;
         align-items: center;
         margin-left: 80px;
     }
-    .menu-items{
-        margin-left: 80px;
-    }
+ 
     .wpp img{
         width: 40px;
         height: 40px;
@@ -230,6 +230,14 @@
         margin-top: 115px;
         margin-left: -10px;
       }
+      .items-box-Wdesc{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        margin: 12px;
+        width: 600px;
+        height: 112px;
+    }
 }
 
 @media screen and (max-width: 280px) {
@@ -278,7 +286,7 @@
 @media screen and (min-width: 768px) {
     /* Styles for tablets */
     #title-bebidas, #title-sandwiches,
-#title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
+    #title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
