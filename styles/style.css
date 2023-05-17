@@ -123,8 +123,10 @@
     height: 80px;
 }
 .items-title{
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .items-price{
