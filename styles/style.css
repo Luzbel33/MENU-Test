@@ -62,13 +62,10 @@
 }
 .wpp{
     font-weight: bold;
-    gap: 15px;
+    gap: 5px;
 }
 .wpp-p{
-    font-size: 13px;
-    font-weight: 700;
-    margin-top: 200px;
-    margin-left: -65px;
+    display: none;
 }
 .wpp img{
     width: 40px;
@@ -123,10 +120,13 @@
     height: 80px;
 }
 .items-title{
+    width: 100%;
+    margin-left: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    padding: 2px;
+    gap: 0.5rem;
 }
 
 .items-price{
@@ -136,23 +136,22 @@
     gap: 5px;
     border: 2px solid #e75022;
     padding: 10px;
-    margin-top: -15px;
+    margin-top: -5%;
     border-radius: 10px;
     width: 75px;
     height: 10px;
+  
 }
 
 .items-desc{
     font-size: 15px;
     color: rgb(104, 102, 102);
-    margin-top: -15px;
-    margin-bottom: 25px;
+    margin-top: -5%;
+    margin-bottom: 10%;
 }
 .items-box-Wdesc{
-
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin: 0 0 auto 30px;
-    height: 140px;
+    height: 150px;
     width: 100%;
 }
 .items-price span{
@@ -182,6 +181,7 @@
     }
     .items-title{
      display: grid;
+     margin-left: 5%;
     }
     .items-desc{
       margin-right: 50px;
@@ -203,7 +203,7 @@
         padding: 30px 50px;
         background-color: #f4f4f4e6;
         height: 150px;
-        min-width: 100%;
+       
         width: 100%;
     }
     .bg-img img {
@@ -251,9 +251,9 @@
         height: 150px;
         width: 85%;
     }
- .logo, .name{
+    .logo, .name{
     margin-left: -20px;
- }
+    }
     .bg-img img {
         max-height: 350px;
         height: 350px;
@@ -288,17 +288,12 @@
 
 @media screen and (min-width: 768px) {
     /* Styles for tablets */
-    #title-bebidas, #title-sandwiches,
-    #title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
     .header-box{
         padding: 30px 50px;
         background-color: #f4f4f4e6;
         height: 150px;
-        min-width: 90%;
+        width: 90%;
     }
     .bg-img img {
         max-height: 350px;
@@ -320,10 +315,13 @@
     }
     .items-title{
         justify-content: space-around;
-        flex-wrap: wrap;
+    }
+
+    .items-title{
+        margin-left: -2.5%;
     }
     .items-desc{
-      margin-right: 50px;
+        margin-bottom: 5%;
     }
     .menu-sect{
         display: flex;
@@ -334,160 +332,116 @@
         margin-left: 50px;
         width: 90%;
     }
+    .bg-img img {
+        min-height: 100px;
+        height: 250px;
     }
-  .bg-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    min-height: 100px;
-    height: 250px;
-    object-fit: cover;
-    object-position: top;
-    z-index: -1;
+    
 }
 
 
 
 @media screen and (min-width: 1020px) {
     
-.header{
-    padding-bottom: 250px;
-  }
-  .header-box{
-      display: grid;
-      grid-template-columns: auto 1fr auto auto auto;
-      gap: 20px;
-      position: relative;
-      padding: 30px 50px;
-      background-color: #f4f4f4e6;
-      height: 100px;
-  }
-  .header-box{
-      position: absolute;
-      min-width: 94.8%;
-      top: 0;
-      left: 0;
-      right: 0;
-      max-height: 250px;
-      height: 150px;
-      object-position: top;
-  }
-  .bg-img img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      max-height: 350px;
-      height: 350px;
-      object-fit: cover;
-      object-position: top;
-      z-index: -1;
-  }
-  .name{
-    margin-bottom: 50px;
-  }
-  .logo {
-    margin-top:45px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-  }
-  .logo-img img {
-      width: 120px;
-      height: 120px;
-      border-radius: 55px;
-      box-shadow: azure 0 0 10px;
-  }
-  .social{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-right: 150px;
-  }
-  .contact, .mail, #mail{
-    display: flex;
-}
-  .mail img{
-      width: 30px;
-      height: 30px;
-  }
-  .mail{
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-  }
-  .wpp{
-      font-weight: bold;
-      gap: 15px;
-      margin-left: 20px;
-  }
-  .wpp-p{
-    font-weight: 700;
-    margin-top: 20px;
-    margin-left: -10px;
-  }
-  .wpp img{
-      width: 50px;
-      height: 50px;
-      border-radius: 50px;
-      margin-bottom: 100px;
-  }
-  
-  .menu-nav{
-      background-color: white;
-      display: flex;
-      justify-content: space-around;
-      margin: 0 auto;
-      width: 80%;
-      border-radius: 25px;
-      padding: 10px;
-      margin-top: 40px;
-  }
-  .products{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 10px;
-  }
-  .products p {
-      font-size: 1rem;
-      margin-left: 10px;
-      margin-right: 10px;
-  }
-  .products img {
-      border-radius: 50px;
-}
-.menu-sect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 10px;
-    margin-left: 90px;
-    width: 90%;
-}
-#title-bebidas, #title-sandwiches,
-#title-ejemplo1, #title-ejemplo2, #title-ejemplo3{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.items-box{
-    margin-top: -15px;
-    height: 100px;
-    width: 400px;
-}
-.items-desc{
-    width: 400px;
-}
-.items-box-Wdesc{
-    width: 400px;
-    height: 160px;
-}
+    .header{
+        padding-bottom: 250px;
+    }
+    .header-box{
+        display: grid;
+        grid-template-columns: auto 1fr auto auto auto;
+        gap: 20px;
+        padding: 30px 50px;
+        background-color: #f4f4f4e6;
+        height: 100px;
+    }
+    .header-box{
+        max-height: 250px;
+        height: 150px;
+        object-position: top;
+        width: 94.7%;
+    } 
+    .bg-img img {
+        position: absolute;
+        object-fit: cover;
+        object-position: top;
+    }
+    .name{
+        margin-bottom: 50px;
+    }
+    .logo {
+        margin-top:45px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .logo-img img {
+        width: 120px;
+        height: 120px;
+        border-radius: 55px;
+        box-shadow: azure 0 0 10px;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+    .contact, .mail, #mail{
+        display: flex;
+    }
+    .mail img{
+        width: 30px;
+        height: 30px;
+    }
+    .mail{
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .wpp{
+        font-weight: bold;
+        gap: 15px;
+    }
+    .wpp-p{
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .wpp img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-bottom: 100px;
+    }
+
+    .menu-nav{
+        width: 80%;
+        padding: 10px;
+        margin-top: 2%;
+    }
+    .products p {
+        font-size: 1rem;
+    }
+    .products img {
+        border-radius: 50px;
+    }
+    .menu-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .items-desc{
+        width: 400px;
+        margin-bottom: 5%;
+    }
+    .items-box-Wdesc{
+        width: 400px;
+        height: 160px;
+    }
 
 }
 
